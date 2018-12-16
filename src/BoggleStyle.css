@@ -1,0 +1,79 @@
+/*Ryan Croxford*/
+/*CS 110*/
+/*Style sheet for the GUI*/
+.tile{
+    /*-fx-border-width: 5px;*/
+    /*-fx-border-color: lightblue;*/
+    /*-fx-border-radius: 10px;*/
+    -fx-background-radius: 10px;
+    -fx-font-size:36px;
+    -fx-font-family: "Marker Felt","Comic Sans MS", cursive, sans-serif;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+
+}
+.tile:hover{
+    /*-fx-background-color: #dbdbdb;*/
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+.unused{
+    -fx-background-color: #f4f4f4;
+
+}
+.used{
+    -fx-background-color: #bebebe;
+    -fx-background-radius: 10px;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+.grid{
+    -fx-background-color: rgb(98, 163, 193);
+    -fx-background-radius: 20px;
+    -fx-border-radius: 15px;
+    -fx-border-width: 5px;
+    -fx-max-width: 300px;
+    -fx-max-height: 300px;
+    /*-fx-border-color: yellow;*/
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+.title{
+    -fx-font-size:56px;
+    -fx-font-family: "Marker Felt","Comic Sans MS", cursive, sans-serif;
+    -fx-font-weight: bold;
+    -fx-fill: #f4f4f4;
+    -fx-stroke: rgb(98, 163, 193);
+    -fx-stroke-width: 3px;
+}
+.game{
+    -fx-background-color: linear-gradient(to bottom right, #ffa84c 0%,#ff7b0d 100%);
+}
+.wordList{
+    -fx-background-radius: 20px;
+    -fx-background-color: #f4f4f4;
+    -fx-border-radius: 15px;
+    -fx-border-color: rgb(98, 163, 193);
+    -fx-border-width: 5px;
+}
+.wordList *{
+    -fx-background-radius: 15px;
+}
+
+.button{
+    -fx-background-color: none;
+    -fx-background-radius: 10px;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-border-color: rgb(98, 163, 193);
+    -fx-text-fill: white;
+    -fx-padding: 12px 24px;
+    -fx-font-family: "Marker Felt","Comic Sans MS", cursive, sans-serif;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+
+}
+.button:hover{
+    -fx-background-color:rgb(98, 163, 193);
+    -fx-text-fill: black;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+.messageText{
+    -fx-font-family: "Marker Felt","Comic Sans MS", cursive, sans-serif;
+    -fx-text-fill: white;
+}
