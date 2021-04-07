@@ -54,4 +54,5 @@ public class PhaseOneTester
             System.out.printf("%s is not a valid word\n",w);
         Board board = new Board();
         System.out.println(board);
-    } }
+    }
+}

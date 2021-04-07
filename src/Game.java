@@ -40,15 +40,15 @@ public class Game {
             if (selectedTiles.size() > 0) {
                 //make the bounds of the tile minus 1 to plus 1 the position of the rows and columns
                 int lastRow = selectedTiles.get(selectedTiles.size() - 1).getRow();
-                int rowBehind = selectedTiles.get(selectedTiles.size() - 1).getRow() - 1;
-                int rowAhead = selectedTiles.get(selectedTiles.size() - 1).getRow() + 1;
+                int rowBehind = lastRow - 1;
+                int rowAhead = lastRow + 1;
                 int lastCol = selectedTiles.get(selectedTiles.size() - 1).getColumn();
-                int aboveCol = selectedTiles.get(selectedTiles.size() - 1).getColumn() - 1;
-                int belowCol = selectedTiles.get(selectedTiles.size() - 1).getColumn() + 1;
+                int aboveCol = lastCol - 1;
+                int belowCol = lastCol + 1;
 
                 //Test if it is adjacent to the previously selected tile
                 //return true because both if statements are met
-//return false because it is not adjacent
+                //return false because it is not adjacent
                 return (selectedTiles.size() > 0) && (row == lastRow || row == rowBehind || row == rowAhead)
                         && (col == lastCol || col == aboveCol || col == belowCol);
 
